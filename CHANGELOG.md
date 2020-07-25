@@ -10,18 +10,24 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/).
 ### Added
 
 - Added SSIM metrics ([#2671](https://github.com/PyTorchLightning/pytorch-lightning/pull/2671))
+
 - Added BLEU metrics ([#2535](https://github.com/PyTorchLightning/pytorch-lightning/pull/2535))
 
 - Added support for `Trainer(num_sanity_val_steps=-1)` to check all validation data before training ([#2246](https://github.com/PyTorchLightning/pytorch-lightning/pull/2246))
 
 - Added struct. output:
   * tests for val loop flow ([#2605](https://github.com/PyTorchLightning/pytorch-lightning/pull/2605))
-  * EvalResult support for train and val. loop ([#2615](https://github.com/PyTorchLightning/pytorch-lightning/pull/2615), [#2651](https://github.com/PyTorchLightning/pytorch-lightning/pull/2651))
+  * `EvalResult` support for train and val. loop ([#2615](https://github.com/PyTorchLightning/pytorch-lightning/pull/2615), [#2651](https://github.com/PyTorchLightning/pytorch-lightning/pull/2651))
 
-- Added Datamodule ([#2668](https://github.com/PyTorchLightning/pytorch-lightning/pull/2668))
+- Added class `DataModule` ([#2668](https://github.com/PyTorchLightning/pytorch-lightning/pull/2668))
 
 ### Changed
 
+- Enable val/test loop disabling ([#2692](https://github.com/PyTorchLightning/pytorch-lightning/pull/2692))
+
+- Reactor into `accelerator` module:
+    * GPU training ([#2704](https://github.com/PyTorchLightning/pytorch-lightning/pull/2704))
+    * TPU training ([#2708](https://github.com/PyTorchLightning/pytorch-lightning/pull/2708))
 
 ### Deprecated
 
